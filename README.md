@@ -62,7 +62,7 @@ indicator flags (e.g. free school meals, school absence, exclusions, benefits).
 The widest gaps are housing benefit (+15.5pp), free school meals (+13.6pp) and
 school absence (+8.2pp) — all statistically significant (Fisher's exact, p < 0.01).
 
-![Indicator prevalence: 1 episode vs 3+ episodes](images/indicator_comparison.png)
+![Indicator prevalence: 1 episode vs 3+ episodes](indicator_comparison.png)
 
 **2. Disadvantage tends to stack.** Children with 3+ episodes carry on average
 **1.8× more** co-occurring indicators (1.11 vs 0.63) — repeat CIN involvement
@@ -75,7 +75,7 @@ episode. Recurrence concentrates in primary-school age (42% of the 3+ group is
 aged 5–10). The attendance gap between the two groups also **widens sharply
 through the teenage years.**
 
-![Associated indicators by age band](images/indicators_by_age.png)
+![Associated indicators by age band](indicators_by_age.png)
 
 ## Recommendations to the Local Authority
 
@@ -98,9 +98,9 @@ through the teenage years.**
 
 ```
 social-finance-cin/
-├── analysis.py          # Full analysis: data checks, stats, charts
-├── images/              # Charts produced by the analysis
-└── presentation/        # Stakeholder slide deck (.pptx)
+├── analysis.py                                          # Full analysis: data checks, stats, charts
+├── *.png                                                # Charts produced by the analysis
+└── Bekir_Onal_Data_Scientist_I_Case_Study_Presentation.pptx   # Stakeholder slide deck
 ```
 
 ## How to run
