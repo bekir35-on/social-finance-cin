@@ -1,5 +1,5 @@
 """
-Social Finance Digital Labs - Data Analyst Case Study
+Social Finance (Digital Labs) - case study for the Data Scientist I application
 CIN (Child in Need) population analysis
 
 Author: Bekir Onal
@@ -165,7 +165,7 @@ ax.set_ylabel("Number of children")
 ax.set_title("Age distribution of full vulnerable-children population", fontsize=14, color=NAVY, weight="bold")
 ax.set_xticks(range(0, 18, 2))
 plt.tight_layout()
-plt.savefig(f"{OUT_DIR}/01_age_distribution.png", dpi=150)
+plt.savefig(f"{OUT_DIR}/age_distribution.png", dpi=150)
 plt.close()
 
 # Chart 2: Distribution of number of CIN events (among those with >=1)
@@ -181,7 +181,7 @@ for b, v in zip(bars, cin_counts.values):
     ax.text(b.get_x()+b.get_width()/2, v+offset, f"{v:,}", ha="center", fontsize=9, color=NAVY)
 ax.set_ylim(0, cin_counts.max() * 1.12)
 plt.tight_layout()
-plt.savefig(f"{OUT_DIR}/02_cin_episode_distribution.png", dpi=150)
+plt.savefig(f"{OUT_DIR}/cin_episode_distribution.png", dpi=150)
 plt.close()
 
 # =========================================================
@@ -262,7 +262,7 @@ ax.set_xlabel("% of children with indicator")
 ax.set_title("Prevalence of associated indicators: 1 CIN episode vs 3+ CIN episodes", fontsize=14, color=NAVY, weight="bold")
 ax.legend(loc="lower right", frameon=False)
 plt.tight_layout()
-plt.savefig(f"{OUT_DIR}/03_risk_factor_comparison.png", dpi=150)
+plt.savefig(f"{OUT_DIR}/indicator_comparison.png", dpi=150)
 plt.close()
 
 # =========================================================
@@ -293,7 +293,7 @@ ax.set_ylabel("% of group")
 ax.set_title("Age profile: 1 episode vs 3+ episodes", fontsize=14, color=NAVY, weight="bold")
 ax.legend(frameon=False)
 plt.tight_layout()
-plt.savefig(f"{OUT_DIR}/04_age_profile_by_group.png", dpi=150)
+plt.savefig(f"{OUT_DIR}/age_profile.png", dpi=150)
 plt.close()
 
 # Mean age comparison
@@ -333,7 +333,7 @@ for ax, col in zip(axes.flat, headline):
 axes.flat[0].legend(frameon=False, fontsize=9, loc="upper left")
 fig.suptitle("Prevalence of associated indicators by age band: 1 episode vs 3+ episodes", fontsize=14, color=NAVY, weight="bold")
 plt.tight_layout()
-plt.savefig(f"{OUT_DIR}/05_age_breakdown_small_multiples.png", dpi=150)
+plt.savefig(f"{OUT_DIR}/indicators_by_age.png", dpi=150)
 plt.close()
 
 # =========================================================
@@ -360,7 +360,7 @@ ax.set_ylabel("Proportion of group")
 ax.set_title("Cumulative disadvantage: 1 episode vs 3+ episodes", fontsize=14, color=NAVY, weight="bold")
 ax.legend(frameon=False)
 plt.tight_layout()
-plt.savefig(f"{OUT_DIR}/06_cumulative_risk.png", dpi=150)
+plt.savefig(f"{OUT_DIR}/cumulative_disadvantage.png", dpi=150)
 plt.close()
 
 print("\nDone. Charts saved to ./charts/")
